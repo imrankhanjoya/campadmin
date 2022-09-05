@@ -1,34 +1,36 @@
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import React from 'react'
 
-
-
-
-export default function Header() {
- 
-
-    return (
-        <header className="text-gray-600 body-font">
-            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-black rounded-full" viewBox="0 0 24 24">
-                    <text x="8" y="20" font-size="20" fill="black" font-family='ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'>P</text>
-
-                    </svg>
-                    <span className="ml-3 text-xl">POSEPOP.</span>
-                </a>
-                
-                    <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                        <a href="brand" className="mr-5 hover:text-gray-900 menu">Brand</a>
-                        <a href="users" className="mr-5 hover:text-gray-900 menu">Users</a>
-                        <a href="/campaign" className="mr-5 hover:text-gray-900 menu">Campaign</a>
-
-                        <a href="/dashboard" className="mr-5 hover:text-gray-900 menu">Dashboard</a>
-                        <a href="/influancer" className="mr-5 hover:text-gray-900 menu">Influancer</a>
-                    </nav>
-                    <a href="/api/auth/signout" className="inline-flex items-center bg-[#f5333f] py-1 px-3 focus:outline-none  hover:text-[#f5333f] hover:bg-white  border-2 border-[#f5333f] text-white rounded-full text-base mt-4 md:mt-0 space-x-2">
-                        <img src="" className="w-5 rounded-full" />
-                        <label className="menu">Logout</label>
-                    </a>
-            </div>
-        </header>
-    )
+function Header() {
+  const router = useRouter();
+  return (
+    <div>
+        <div className="h-16 lg:flex w-full border-b border-gray-200 bg-white dark:border-gray-800 hidden px-10">
+        <div className="flex h-full text-gray-600 dark:text-gray-400">
+          <Link href={"/tables/influencer"}><a className={`cursor-pointer h-full border-b-2 border-transparent inline-flex items-center mr-8 ${router.pathname == '/tables/influencer'?"border-blue-500 text-blue-500":""}`}>Influancer</a></Link>
+          <Link href={"/tables/brands"}><a className={`cursor-pointer h-full border-b-2 border-transparent inline-flex items-center mr-8 ${router.pathname == '/tables/brands'?"border-blue-500 text-blue-500":""}`}>Brands</a></Link>
+          <Link href={"/tables/campaings"}><a className={`cursor-pointer h-full border-b-2 border-transparent inline-flex items-center mr-8 ${router.pathname == '/tables/campaings'?"border-blue-500 text-blue-500":""}`}>Campaings</a></Link>
+          <Link href={"/tables/submissions"}><a className={`cursor-pointer h-full border-b-2 border-transparent inline-flex items-center mr-8 ${router.pathname == '/tables/submissions'?"border-blue-500 text-blue-500":""}`}>submissions</a></Link>
+          <Link href={"/tables/adminusers"}><a className={`cursor-pointer h-full border-b-2 border-transparent inline-flex items-center mr-8 ${router.pathname == '/tables/adminusers'?"border-blue-500 text-blue-500":""}`}>users</a></Link>
+        </div>
+        <div className="ml-auto flex items-center space-x-7">
+          <button className="h-8 px-3 rounded-md shadow text-white bg-blue-500">Button</button>
+  
+          <button className="flex items-center">
+            <span className="relative flex-shrink-0">
+              <img className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1521587765099-8835e7201186?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ" alt="profile" />
+              <span className="absolute right-0 -mb-0.5 bottom-0 w-3 h-3 rounded-full bg-green-500 border border-white dark:border-gray-900"></span>
+            </span>
+            <span className="ml-2">James Smith</span>
+            <svg viewBox="0 0 24 24" className="w-4 ml-1 flex-shrink-0" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  )
 }
+
+export default Header
