@@ -1,11 +1,11 @@
 import React from 'react'
-import Table from '../../components/Table'
+import BrandTable from '../../components/BrandTable'
 import axios from 'axios'
 
 export default function Campaings() {
   return (
     <div>
-      <Table TableHead = {['Photo','Brand','Campaing','Introduction','Platform']} TableData = {''}></Table>
+      <BrandTable TableHead = {['Photo','Brand','Campaign','Introduction','Platform']} TableData = {''}></BrandTable>
     </div>
   )
 }

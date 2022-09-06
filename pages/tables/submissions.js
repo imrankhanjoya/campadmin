@@ -1,10 +1,10 @@
 import React from 'react'
-import Table from '../../components/Table'
+import BrandTable from '../../components/BrandTable'
 
 export default function Submissions() {
   return (
     <div>
-        <Table TableHead={['Photo', 'Title', 'Description', 'Keywords', 'Post URL', 'Influancer Name', 'Instagram Handler', 'FaceBook Handler', 'YouTube Handler', 'Twitter Handler']} TableData={''}/>
+        <BrandTable TableHead={['Photo', 'Title', 'Description', 'Keywords', 'Post URL', 'Influancer Name', 'Instagram Handler', 'FaceBook Handler', 'YouTube Handler', 'Twitter Handler']} TableData={''}/>
     </div>
   )
 }
