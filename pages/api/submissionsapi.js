@@ -18,12 +18,12 @@ export default  async function  handler(req, res) {
 
   const clientconnected = await clientPromise;
   const db = clientconnected.db("infulancer");
-  let influencerlist
+  let submissionslist
   
-  influencerlist = await db.collection("user").find({}).toArray();
+  submissionslist = await db.collection("participants").find({}).toArray();
 
-
-  res.status(200).json({data:influencerlist})
+//   console.log('this is submissions list data', submissionslist)
+  res.status(200).json({data:submissionslist})
 
 
 
