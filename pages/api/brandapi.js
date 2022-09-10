@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb'
 
-const url = "mongodb+srv://akramjoya:SimplySocial!123@cluster0.cl6q6ca.mongodb.net"
+const url = "mongodb+srv://akramjoya:SimplySocial!123@cluster0.cl6q6ca.mongodb.net/"
 const options = {
   useUnifiedTopology: true,
   useNewUrlParser: true,

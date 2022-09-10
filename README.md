@@ -36,4 +36,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## MongoDB URL
 
-`mongodb+srv://akramjoya:SimplySocial!123@cluster0.cl6q6ca.mongodb.net`
+`mongodb+srv://akramjoya:SimplySocial!123@cluster0.cl6q6ca.mongodb.net/`

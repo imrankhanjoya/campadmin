@@ -5,16 +5,16 @@ export default function Brands({ datalist }) {
   return (
     <div>
       <div className="w-full">
-        <div class="flex-grow bg-white dark:bg-gray-900 overflow-y-auto">
-          <div class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white dark:bg-gray-900 dark:text-white dark:border-gray-800 sticky top-0">
+        <div class="flex-grow bg-white  overflow-y-auto">
+          <div class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white   sticky top-0">
             <TableHead></TableHead>
           </div>
           <div class="sm:p-7 p-4">
             <div class="flex w-full items-center mb-7">
-              <button class="inline-flex mr-3 items-center h-8 pl-2.5 pr-2 rounded-md shadow text-gray-700 dark:text-gray-400 dark:border-gray-800 border border-gray-200 leading-none py-0">
+              <button class="inline-flex mr-3 items-center h-8 pl-2.5 pr-2 rounded-md shadow text-gray-700  border border-gray-200 leading-none py-0">
                 <svg
                   viewBox="0 0 24 24"
-                  class="w-4 mr-2 text-gray-400 dark:text-gray-600"
+                  class="w-4 mr-2 text-gray-400 "
                   stroke="currentColor"
                   stroke-width="2"
                   fill="none"
@@ -29,7 +29,7 @@ export default function Brands({ datalist }) {
                 Last 30 days
                 <svg
                   viewBox="0 0 24 24"
-                  class="w-4 ml-1.5 text-gray-400 dark:text-gray-600"
+                  class="w-4 ml-1.5 text-gray-400 "
                   stroke="currentColor"
                   stroke-width="2"
                   fill="none"
@@ -39,11 +39,11 @@ export default function Brands({ datalist }) {
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </button>
-              <button class="inline-flex items-center h-8 pl-2.5 pr-2 rounded-md shadow text-gray-700 dark:text-gray-400 dark:border-gray-800 border border-gray-200 leading-none py-0">
+              <button class="inline-flex items-center h-8 pl-2.5 pr-2 rounded-md shadow text-gray-700  border border-gray-200 leading-none py-0">
                 Filter by
                 <svg
                   viewBox="0 0 24 24"
-                  class="w-4 ml-1.5 text-gray-400 dark:text-gray-600"
+                  class="w-4 ml-1.5 text-gray-400 "
                   stroke="currentColor"
                   stroke-width="2"
                   fill="none"
@@ -57,37 +57,37 @@ export default function Brands({ datalist }) {
             <table class="w-full text-left">
               <thead>
                 <tr class="text-gray-400">
-                  <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800">
+                  <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">
                     Brand
                   </th>
-                  <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800">
+                  <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">
                     Website
                   </th>
-                  <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 hidden md:table-cell">
+                  <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200  hidden md:table-cell">
                     Phone
                   </th>
-                  <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800">
+                  <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">
                     Email
                   </th>
                 </tr>
               </thead>
-              <tbody class="text-gray-600 dark:text-gray-100">
+              <tbody class="text-gray-600 ">
                 {datalist.map((e)=>{
                   return(<tr>
-                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-gray-800">
+                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200  text-gray-800">
 {e.brand}
                   </td>
-                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-gray-800">
+                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200  text-gray-800">
                   {e.website}
                   </td>
-                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-gray-800">
+                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200  text-gray-800">
                   {e.phone}
                   </td>
-                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-gray-800">
+                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200  text-gray-800">
                   {e.email}
                   </td>
 
-                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                  <td class="sm:p-3 py-2 px-1 border-b border-gray-200 ">
                     <button class="w-8 h-8 inline-flex items-center justify-center text-gray-400 ml-auto">
                       <svg
                         viewBox="0 0 24 24"
