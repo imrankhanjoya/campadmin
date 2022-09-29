@@ -20,7 +20,7 @@ export default  async function  handler(req, res) {
   const db = clientconnected.db("infulancer");
   let adminuserslist
   
-  adminuserslist = await db.createCollection("adminuser"){'admin_name':'akram}
+  adminuserslist = await db.createCollection("adminuser",{'admin_name':'akram'})
 
 
   res.status(200).json({data:adminuserslist})
@@ -28,6 +28,6 @@ export default  async function  handler(req, res) {
 
 
   
-}
+  }
 
 

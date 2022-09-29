@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import axios from 'axios'
-
-export default function Campaings() {
-  return (
-    <div>
-      
-=======
 import React from "react";
 import axios from "axios";
 import TableHead from "../../components/TabelHeader";
@@ -132,7 +123,6 @@ export default function Brands({ campaginlist }) {
           </div>
         </div>
       </div>
->>>>>>> de0e4d41add925f1698351083862fa8b1c9fae80
     </div>
   );
 }

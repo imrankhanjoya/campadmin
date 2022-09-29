@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 import React from 'react'
-=======
-import React from "react";
-import axios from "axios";
-import TableHead from "../../components/TabelHeader";
->>>>>>> de0e4d41add925f1698351083862fa8b1c9fae80
 
 
 export default function Submissions({ submissionslist }) {
   return (
     <div>
-<<<<<<< HEAD
-=======
       <div className="w-full">
         <div className="flex-grow bg-white dark:bg-gray-900 overflow-y-auto">
           <div className="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white dark:bg-gray-900 dark:text-white dark:border-gray-800 sticky top-0">
@@ -122,7 +114,6 @@ export default function Submissions({ submissionslist }) {
           </div>
         </div>
       </div>
->>>>>>> de0e4d41add925f1698351083862fa8b1c9fae80
     </div>
   );
 }

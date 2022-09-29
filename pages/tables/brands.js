@@ -5,7 +5,6 @@ export default function Brands({ datalist }) {
   return (
     <div>
       <div className="w-full">
-<<<<<<< HEAD
         <div class="flex-grow bg-white  overflow-y-auto">
           <div class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white   sticky top-0">
             <TableHead></TableHead>
@@ -16,18 +15,6 @@ export default function Brands({ datalist }) {
                 <svg
                   viewBox="0 0 24 24"
                   class="w-4 mr-2 text-gray-400 "
-=======
-        <div className="flex-grow bg-white dark:bg-gray-900 overflow-y-auto">
-          <div className="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white dark:bg-gray-900 dark:text-white dark:border-gray-800 sticky top-0">
-            <TableHead></TableHead>
-          </div>
-          <div className="sm:p-7 p-4">
-            <div className="flex w-full items-center mb-7">
-              <button className="inline-flex mr-3 items-center h-8 pl-2.5 pr-2 rounded-md shadow text-gray-700 dark:text-gray-400 dark:border-gray-800 border border-gray-200 leading-none py-0">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-4 mr-2 text-gray-400 dark:text-gray-600"
->>>>>>> de0e4d41add925f1698351083862fa8b1c9fae80
                   stroke="currentColor"
                   strokeWidth="2"
                   fill="none"
@@ -42,11 +29,7 @@ export default function Brands({ datalist }) {
                 Last 30 days
                 <svg
                   viewBox="0 0 24 24"
-<<<<<<< HEAD
                   class="w-4 ml-1.5 text-gray-400 "
-=======
-                  className="w-4 ml-1.5 text-gray-400 dark:text-gray-600"
->>>>>>> de0e4d41add925f1698351083862fa8b1c9fae80
                   stroke="currentColor"
                   strokeWidth="2"
                   fill="none"
@@ -56,19 +39,11 @@ export default function Brands({ datalist }) {
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </button>
-<<<<<<< HEAD
               <button class="inline-flex items-center h-8 pl-2.5 pr-2 rounded-md shadow text-gray-700  border border-gray-200 leading-none py-0">
                 Filter by
                 <svg
                   viewBox="0 0 24 24"
                   class="w-4 ml-1.5 text-gray-400 "
-=======
-              <button className="inline-flex items-center h-8 pl-2.5 pr-2 rounded-md shadow text-gray-700 dark:text-gray-400 dark:border-gray-800 border border-gray-200 leading-none py-0">
-                Filter by
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-4 ml-1.5 text-gray-400 dark:text-gray-600"
->>>>>>> de0e4d41add925f1698351083862fa8b1c9fae80
                   stroke="currentColor"
                   strokeWidth="2"
                   fill="none"
@@ -81,7 +56,6 @@ export default function Brands({ datalist }) {
             </div>
             <table className="w-full text-left">
               <thead>
-<<<<<<< HEAD
                 <tr class="text-gray-400">
                   <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">
                     Brand
@@ -93,24 +67,10 @@ export default function Brands({ datalist }) {
                     Phone
                   </th>
                   <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">
-=======
-                <tr className="text-gray-400">
-                  <th className="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800">
-                    Brand
-                  </th>
-                  <th className="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800">
-                    Website
-                  </th>
-                  <th className="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 hidden md:table-cell">
-                    Phone
-                  </th>
-                  <th className="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800">
->>>>>>> de0e4d41add925f1698351083862fa8b1c9fae80
                     Email
                   </th>
                 </tr>
               </thead>
-<<<<<<< HEAD
               <tbody class="text-gray-600 ">
                 {datalist.map((e)=>{
                   return(<tr>
@@ -129,24 +89,6 @@ export default function Brands({ datalist }) {
 
                   <td class="sm:p-3 py-2 px-1 border-b border-gray-200 ">
                     <button class="w-8 h-8 inline-flex items-center justify-center text-gray-400 ml-auto">
-=======
-              <tbody className="text-gray-600 dark:text-gray-100">
-                {datalist.map((e, index )=>{
-                  return(<tr key={index}>
-                  <td className="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-gray-800">{e.brand}</td>
-                  <td className="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-gray-800">
-                  {e.website}
-                  </td>
-                  <td className="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-gray-800">
-                  {e.phone}
-                  </td>
-                  <td className="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-gray-800">
-                  {e.email}
-                  </td>
-
-                  <td className="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
-                    <button className="w-8 h-8 inline-flex items-center justify-center text-gray-400 ml-auto">
->>>>>>> de0e4d41add925f1698351083862fa8b1c9fae80
                       <svg
                         viewBox="0 0 24 24"
                         className="w-5"
